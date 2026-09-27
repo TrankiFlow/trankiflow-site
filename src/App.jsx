@@ -120,7 +120,87 @@ export default function App() {
 
         <p style={{ marginTop: '30px', fontSize: '0.95rem', color: '#64748b' }}>
           Plataforma de cursos, aplicaciones y servicios online.
+          Conectando redes con N8N
         </p>
+
+        {/* SECCIÓN: AUTOMATION LAB / CASO DE ESTUDIO */}
+<section style={{color: '#ffffff', padding: '5rem 2rem', borderTop: '1px solid #222' }}>
+  <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+    
+    {/* Subtítulo y Título de la sección */}
+    <span style={{ color: '#A5F861', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.85rem' }}>
+      Tranki Flow / Automation Lab
+    </span>
+    <h2 style={{ fontSize: '2.4rem', margin: '0.5rem 0 1.5rem 0', color: '#ffffff', fontWeight: '700' }}>
+      Soluciones Tecnológicas & Automatización de Contenidos
+    </h2>
+    <p style={{ color: '#cccccc', fontSize: '1.15rem', lineHeight: '1.6', maxWidth: '850px' }}>
+      Diseñamos e implementamos flujos de trabajo inteligentes para organizaciones, proyectos y empresas. Eliminamos tareas repetitivas y multiplicamos la presencia digital optimizando los recursos al máximo.
+    </p>
+
+    {/* Tarjeta destacada del caso real */}
+    <div style={{ 
+      backgroundColor: '#1E1E1E', 
+      borderLeft: '5px solid #4ABDAC', 
+      borderRadius: '12px', 
+      padding: '2.5rem 2rem', 
+      marginTop: '2.5rem',
+      boxShadow: '0 8px 25px rgba(0,0,0,0.4)'
+    }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+        <h3 style={{ margin: 0, color: '#4ABDAC', fontSize: '1.6rem', fontWeight: '600' }}>
+          ⚡ Motor de Distribución Multiplataforma (n8n Engine)
+        </h3>
+        <span style={{ backgroundColor: 'rgba(165, 248, 97, 0.15)', color: '#A5F861', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.85rem', fontWeight: '600' }}>
+          Caso de Estudio / En Producción
+        </span>
+      </div>
+
+      <p style={{ color: '#dddddd', marginTop: '1.2rem', fontSize: '1.05rem', lineHeight: '1.6' }}>
+        Un sistema orquestado en <strong>n8n</strong> que toma un único video (como un YouTube Short) y automáticamente procesa, transforma y distribuye el mensaje adaptado para Instagram, TikTok, X (Twitter) y blogs técnicos.
+      </p>
+
+      {/* Tarjetas pequeñas de impacto */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
+        <div style={{ backgroundColor: '#282828', padding: '1.2rem', borderRadius: '8px' }}>
+          <strong style={{ color: '#A5F861', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>0% Trabajo Manual</strong>
+          <span style={{ color: '#bbbbbb', fontSize: '0.92rem', lineHeight: '1.4' }}>Publicación automatizada sin intervención humana tras la subida inicial.</span>
+        </div>
+        <div style={{ backgroundColor: '#282828', padding: '1.2rem', borderRadius: '8px' }}>
+          <strong style={{ color: '#4ABDAC', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>Omnicanalidad Real</strong>
+          <span style={{ color: '#bbbbbb', fontSize: '0.92rem', lineHeight: '1.4' }}>Presencia constante en 5 plataformas simultáneas en cuestión de segundos.</span>
+        </div>
+        <div style={{ backgroundColor: '#282828', padding: '1.2rem', borderRadius: '8px' }}>
+          <strong style={{ color: '#A5F861', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>Escalabilidad & Ahorro de Costos</strong>
+          <span style={{ color: '#bbbbbb', fontSize: '0.92rem', lineHeight: '1.4' }}>Ideal para PyMEs y marcas en crecimiento: maximiza el alcance comercial reduciendo cientos de horas de trabajo operativo.</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Llamado a la acción rápido */}
+    <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
+      <p style={{ color: '#aaaaaa', marginBottom: '1.2rem', fontSize: '1rem' }}>
+        ¿Querés optimizar la comunicación de tu organización o proyecto?
+      </p>
+      <a 
+        href="#contacto" 
+        style={{ 
+          backgroundColor: '#4ABDAC', 
+          color: '#000000', 
+          padding: '1rem 2.2rem', 
+          borderRadius: '8px', 
+          fontWeight: 'bold', 
+          textDecoration: 'none',
+          display: 'inline-block',
+          fontSize: '1rem'
+        }}
+      >
+        Hablemos de tu Proyecto
+      </a>
+    </div>
+
+  </div>
+</section>
       </main>
 
       {/* Footer con Redes Sociales */}
