@@ -1,3 +1,5 @@
+import './App.css'; // Mágia de estilos externa
+
 export default function App() {
   const socialLinks = [
     {
@@ -69,159 +71,99 @@ export default function App() {
   ];
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      backgroundColor: '#0f172a',
-      color: '#f8fafc',
-      fontFamily: 'system-ui, -apple-system, sans-serif',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      textAlign: 'center',
-      padding: '40px 20px 20px 20px',
-      boxSizing: 'border-box'
-    }}>
+    <div className="app-container">
       {/* Contenido Principal */}
-      <main style={{ maxWidth: '650px', width: '100%', margin: 'auto 0' }}>
-        <h1 style={{ 
-          fontSize: '3.2rem', 
-          marginBottom: '10px',
-          color: '#4ABDAC',
-          fontWeight: '800',
-          letterSpacing: '-1px'
-        }}>
-          TrankiFlow<span style={{ color: '#A5F861' }}>.com.ar</span>
+      <main className="main-content">
+        <h1 className="main-title">
+          TrankiFlow<span className="title-highlight">.com.ar</span>
         </h1>
         
-        <p style={{ 
-          fontSize: '1.3rem', 
-          color: '#cbd5e1', 
-          fontWeight: '500',
-          marginBottom: '30px' 
-        }}>
+        <p className="subtitle">
           ¡El <em>Hakuna Matata</em> del desarrollo web y la tecnología! 🦁💻✨
         </p>
 
-        <div style={{
-          backgroundColor: '#1e293b',
-          padding: '25px 30px',
-          borderRadius: '16px',
-          border: '1px solid #334155',
-          boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
-        }}>
-          <p style={{ fontSize: '1.1rem', margin: '0 0 10px 0', color: '#f1f5f9' }}>
+        <div className="status-banner">
+          <p className="status-text">
             Sin estrés, sin bugs raros y con mucho flujo de código.
           </p>
-          <p style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#A5F861', margin: 0 }}>
+          <p className="status-highlight">
             🚀 Muy pronto online...
           </p>
         </div>
 
-        <p style={{ marginTop: '30px', fontSize: '0.95rem', color: '#64748b' }}>
+        <p className="description">
           Plataforma de cursos, aplicaciones y servicios online.
           Conectando redes con N8N
         </p>
 
         {/* SECCIÓN: AUTOMATION LAB / CASO DE ESTUDIO */}
-<section style={{color: '#ffffff', padding: '5rem 2rem', borderTop: '1px solid #222' }}>
-  <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-    
-    {/* Subtítulo y Título de la sección */}
-    <span style={{ color: '#A5F861', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.85rem' }}>
-      Tranki Flow / Automation Lab
-    </span>
-    <h2 style={{ fontSize: '2.4rem', margin: '0.5rem 0 1.5rem 0', color: '#ffffff', fontWeight: '700' }}>
-      Soluciones Tecnológicas & Automatización de Contenidos
-    </h2>
-    <p style={{ color: '#cccccc', fontSize: '1.15rem', lineHeight: '1.6', maxWidth: '850px' }}>
-      Diseñamos e implementamos flujos de trabajo inteligentes para organizaciones, proyectos y empresas. Eliminamos tareas repetitivas y multiplicamos la presencia digital optimizando los recursos al máximo.
-    </p>
+        <section className="automation-section">
+          <div className="section-container">
+            
+            {/* Subtítulo y Título de la sección */}
+            <span className="section-subtitle">
+              Tranki Flow / Automation Lab
+            </span>
+            <h2 className="section-title">
+              Soluciones Tecnológicas & Automatización de Contenidos
+            </h2>
+            <p className="section-description">
+              Diseñamos e implementamos flujos de trabajo inteligentes para organizaciones, proyectos y empresas. Eliminamos tareas repetitivas y multiplicamos la presencia digital optimizando los recursos al máximo.
+            </p>
 
-    {/* Tarjeta destacada del caso real */}
-    <div style={{ 
-      backgroundColor: '#1E1E1E', 
-      borderLeft: '5px solid #4ABDAC', 
-      borderRadius: '12px', 
-      padding: '2.5rem 2rem', 
-      marginTop: '2.5rem',
-      boxShadow: '0 8px 25px rgba(0,0,0,0.4)'
-    }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-        <h3 style={{ margin: 0, color: '#4ABDAC', fontSize: '1.6rem', fontWeight: '600' }}>
-          ⚡ Motor de Distribución Multiplataforma (n8n Engine)
-        </h3>
-        <span style={{ backgroundColor: 'rgba(165, 248, 97, 0.15)', color: '#A5F861', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.85rem', fontWeight: '600' }}>
-          Caso de Estudio / En Producción
-        </span>
-      </div>
+            {/* Tarjeta destacada del caso real */}
+            <div className="case-study-card">
+              <div className="card-header">
+                <h3 className="card-title">
+                  ⚡ Motor de Distribución Multiplataforma (n8n Engine)
+                </h3>
+                <span className="card-badge">
+                  Caso de Estudio / En Producción
+                </span>
+              </div>
 
-      <p style={{ color: '#dddddd', marginTop: '1.2rem', fontSize: '1.05rem', lineHeight: '1.6' }}>
-        Un sistema orquestado en <strong>n8n</strong> que toma un único video (como un YouTube Short) y automáticamente procesa, transforma y distribuye el mensaje adaptado para Instagram, TikTok, X (Twitter) y blogs técnicos.
-      </p>
+              <p className="card-description">
+                Un sistema orquestado en <strong>n8n</strong> que toma un único video (como un YouTube Short) y automáticamente procesa, transforma y distribuye el mensaje adaptado para Instagram, TikTok, X (Twitter) y blogs técnicos.
+              </p>
 
-      {/* Tarjetas pequeñas de impacto */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
-        <div style={{ backgroundColor: '#282828', padding: '1.2rem', borderRadius: '8px' }}>
-          <strong style={{ color: '#A5F861', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>0% Trabajo Manual</strong>
-          <span style={{ color: '#bbbbbb', fontSize: '0.92rem', lineHeight: '1.4' }}>Publicación automatizada sin intervención humana tras la subida inicial.</span>
-        </div>
-        <div style={{ backgroundColor: '#282828', padding: '1.2rem', borderRadius: '8px' }}>
-          <strong style={{ color: '#4ABDAC', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>Omnicanalidad Real</strong>
-          <span style={{ color: '#bbbbbb', fontSize: '0.92rem', lineHeight: '1.4' }}>Presencia constante en 5 plataformas simultáneas en cuestión de segundos.</span>
-        </div>
-        <div style={{ backgroundColor: '#282828', padding: '1.2rem', borderRadius: '8px' }}>
-          <strong style={{ color: '#A5F861', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>Escalabilidad & Ahorro de Costos</strong>
-          <span style={{ color: '#bbbbbb', fontSize: '0.92rem', lineHeight: '1.4' }}>Ideal para PyMEs y marcas en crecimiento: maximiza el alcance comercial reduciendo cientos de horas de trabajo operativo.</span>
-        </div>
-      </div>
-    </div>
+              {/* Tarjetas pequeñas de impacto */}
+              <div className="impact-grid">
+                <div className="impact-item">
+                  <strong className="impact-title green">0% Trabajo Manual</strong>
+                  <span className="impact-desc">Publicación automatizada sin intervención humana tras la subida inicial.</span>
+                </div>
+                <div className="impact-item">
+                  <strong className="impact-title cyan">Omnicanalidad Real</strong>
+                  <span className="impact-desc">Presencia constante en 5 plataformas simultáneas en cuestión de segundos.</span>
+                </div>
+                <div className="impact-item">
+                  <strong className="impact-title green">Escalabilidad & Ahorro</strong>
+                  <span className="impact-desc">Ideal para PyMEs y marcas en crecimiento: maximiza el alcance reduciendo horas de trabajo.</span>
+                </div>
+              </div>
+            </div>
 
-    {/* Llamado a la acción rápido */}
-    <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
-      <p style={{ color: '#aaaaaa', marginBottom: '1.2rem', fontSize: '1rem' }}>
-        ¿Querés optimizar la comunicación de tu organización o proyecto?
-      </p>
-      <a 
-        href="#contacto" 
-        style={{ 
-          backgroundColor: '#4ABDAC', 
-          color: '#000000', 
-          padding: '1rem 2.2rem', 
-          borderRadius: '8px', 
-          fontWeight: 'bold', 
-          textDecoration: 'none',
-          display: 'inline-block',
-          fontSize: '1rem'
-        }}
-      >
-        Hablemos de tu Proyecto
-      </a>
-    </div>
+            {/* Llamado a la acción rápido */}
+            <div className="cta-wrapper">
+              <p className="cta-text">
+                ¿Querés optimizar la comunicación de tu organización o proyecto?
+              </p>
+              <a href="#contacto" className="cta-button">
+                Hablemos de tu Proyecto
+              </a>
+            </div>
 
-  </div>
-</section>
+          </div>
+        </section>
       </main>
 
       {/* Footer con Redes Sociales */}
-      <footer style={{ 
-        width: '100%', 
-        maxWidth: '700px', 
-        borderTop: '1px solid #334155', 
-        paddingTop: '25px',
-        marginTop: '40px'
-      }}>
-        <p style={{ fontSize: '0.9rem', color: '#94a3b8', marginBottom: '15px' }}>
+      <footer className="footer">
+        <p className="footer-text">
           Conectate con nosotros en nuestras redes:
         </p>
         
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          gap: '15px', 
-          flexWrap: 'wrap',
-          marginBottom: '20px'
-        }}>
+        <div className="social-links">
           {socialLinks.map((item, index) => (
             <a 
               key={index} 
@@ -229,36 +171,14 @@ export default function App() {
               target="_blank" 
               rel="noopener noreferrer"
               title={item.name}
-              style={{
-                color: '#f8fafc',
-                backgroundColor: '#1e293b',
-                width: '42px',
-                height: '42px',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                border: '1px solid #334155',
-                transition: 'all 0.2s ease-in-out',
-                textDecoration: 'none'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.color = '#A5F861';
-                e.currentTarget.style.borderColor = '#4ABDAC';
-                e.currentTarget.style.transform = 'translateY(-3px)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.color = '#f8fafc';
-                e.currentTarget.style.borderColor = '#334155';
-                e.currentTarget.style.transform = 'translateY(0)';
-              }}
+              className="social-link"
             >
               {item.svg}
             </a>
           ))}
         </div>
 
-        <p style={{ fontSize: '0.8rem', color: '#475569', margin: 0 }}>
+        <p className="copyright">
           © {new Date().getFullYear()} TrankiFlow. Todos los derechos reservados.
         </p>
       </footer>
