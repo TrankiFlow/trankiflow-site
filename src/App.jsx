@@ -181,6 +181,10 @@ export default function App() {
         <p className="copyright">
           © {new Date().getFullYear()} TrankiFlow. Todos los derechos reservados.
         </p>
+         <p className="copyright">
+        <a href="/politica-privacidad.html" target="_blank" rel="noopener noreferrer">Políticas de Privacidad</a>
+          
+        </p>
       </footer>
     </div>
   );
